@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alt Text Auditor v2</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css'
+    integrity='sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=='
+    crossorigin='anonymous' />
+  <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Alt Text Auditor v2</h1>
+      <div class="credits">
+        <h4>Created with <i class="text-red fa-solid fa-heart"></i> by <a href="https://jarednewnam.com">Jared</a>.</h4>
+        <h4>Fork it on <a href="https://github.com/r3hab-media/Alt-Text-Auditor"><i class="fa-brands fa-github"></i>
+            Github</a></h4>
+      </div>
+    </header>
+
+    <section class="controls">
+      <div id="summary" aria-live="polite"></div>
+    </section>
+
+    <section id="notes">
+      <details>
+        <summary>What counts as missing</summary>
+        <p>Lists images where <code>alt</code> is missing or empty. Ignores images marked decorative with
+          <code>role="presentation"</code> or <code>aria-hidden="true"</code>.
+        </p>
+      </details>
+    </section>
+
+    <section class="canvas-wrap">
+      <ul id="results" class="grid" role="list"></ul>
+    </section>
+  </div>
+  <script src="popup.js"></script>
+</body>
+
+</html>

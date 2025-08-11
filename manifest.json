@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Alt Text Auditor",
+  "version": "2.0.0",
+  "description": "Scan the current page and list <img> elements missing or empty alt text.",
+  "action": {
+    "default_title": "Scan for missing alt text",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "scripting",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ]
+}

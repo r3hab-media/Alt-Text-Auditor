@@ -1,0 +1,121 @@
+:root {
+	--bg: #0f1115;
+	--panel: #171924;
+	--ink: #e6e6e6;
+	--muted: #9aa4b2;
+	--accent: #3b82f6;
+	--line: #262a3b;
+	--red: #ff8787;
+}
+* {
+	box-sizing: border-box;
+}
+html,
+body {
+	margin: 0;
+	padding: 0;
+	background: var(--bg);
+	color: var(--ink);
+	font: 18px/1.4 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+	min-width: 780px;
+}
+
+a {
+	color: var(--ink);
+}
+
+h1 {
+	font-size: 1.2rem;
+	margin: 0;
+	display: block;
+}
+
+.fa-heart {
+	color: var(--red);
+}
+
+.credits {
+	display: flex;
+	justify-content: space-between;
+}
+
+.wrap {
+	width: 780px;
+	max-width: 100%;
+}
+header {
+	padding: 10px 12px;
+	border-bottom: 1px solid var(--line);
+	background: var(--panel);
+	position: sticky;
+	top: 0;
+	z-index: 3;
+}
+.controls {
+	padding: 10px 12px;
+	background: var(--panel);
+	border-bottom: 1px solid var(--line);
+}
+.grid {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 12px;
+}
+.row {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.credits {
+	display: flex;
+	justify-content: space-between;
+}
+.canvas-wrap {
+	padding: 12px;
+}
+
+/* Crop UI */
+
+/* Alt Text Auditor specific */
+#summary {
+	font-size: 0.95rem;
+	color: var(--muted);
+}
+#results.grid {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#results .card {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 10px;
+	padding: 10px;
+	background: var(--panel);
+	border: 1px solid var(--line);
+	border-radius: 12px;
+}
+.thumb {
+	width: 100%;
+	height: auto;
+	display: block;
+	border-radius: 8px;
+}
+
+#notes summary {
+	padding: 10px 12px;
+	cursor: pointer;
+	font-size: 0.85rem;
+}
+
+#notes p {
+	padding: 0 10px 12px 10px;
+	cursor: pointer;
+	font-size: 0.85rem;
+}
+code {
+	font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+	font-size: 0.8rem;
+	word-break: break-all;
+}
